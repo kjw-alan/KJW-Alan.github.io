@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX Display Technology - Touch Screen & Display Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            color: #1e1e2f;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #0b1c3a 0%, #1e3a6b 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        .header .subhead {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #0b1c3a;
+            border-bottom: 3px solid #1e3a6b;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+        .product-card {
+            background: #f8faff;
+            border-radius: 16px;
+            padding: 1.8rem 1.5rem;
+            box-shadow: 0 10px 30px -10px rgba(0,20,50,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #e9edf5;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(0,40,80,0.2);
+        }
+        .product-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #1e3a6b;
+            font-weight: 600;
+        }
+        .product-card p {
+            color: #2d3a5e;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .product-tag {
+            display: inline-block;
+            background: #1e3a6b;
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+        }
+        .about {
+            background: #f0f4fe;
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        .contact-block {
+            background: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 15px 35px -10px rgba(0,0,0,0.1);
+            border: 1px solid #e2eafc;
+            margin-top: 2rem;
+        }
+        .contact-block h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #0b1c3a;
+        }
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 1.2rem;
+        }
+        .contact-details div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 1px dashed #ccd9f0;
+            padding-bottom: 0.8rem;
+        }
+        .contact-details strong {
+            min-width: 80px;
+            color: #1e3a6b;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0b1c3a;
+            color: white;
+            font-size: 0.95rem;
+            margin-top: 3rem;
+        }
+        .footer a {
+            color: #aac3ff;
+            text-decoration: none;
+        }
+        .btn-email {
+            display: inline-block;
+            background: #1e3a6b;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .btn-email:hover {
+            background: #0f2a4f;
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .container { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📱 Heorousdisplay</h1>
+        <div class="subhead">专业 · 工业级 · 触控显示一体化方案</div>
+        <div style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.8;">Display · Touch · Integrated Solutions</div>
+    </div>
+
+    <div class="container">
+        <!-- 核心产品 -->
+        <div>
+            <span class="section-title">🖥️ 核心产品</span>
+            <div class="products">
+                <div class="product-card">
+                    <h3>消费类显示屏、工业显示屏</h3>
+                    <p>小尺寸~21.5" 高亮 / 宽温 / 长寿命，适用于户外设备、自助终端、工业控制。</p >
+                    <span class="product-tag">RGB/MCU/MIPI/HDMI / LVDS / eDP</span>
+                </div>
+                <div class="product-card">
+                    <h3>触摸屏模组</h3>
+                    <p>电容式 / 电阻式，支持多点触控、手套触摸、防水性能，可定制盖板。</p >
+                    <span class="product-tag">USB / I²C 接口</span>
+                </div>
+                <div class="product-card">
+                    <h3>触控显示一体方案</h3>
+                    <p>显示屏 + 触摸 + 驱动板 + 外壳，即插即用，缩短客户开发周期。</p >
+                    <span class="product-tag">ODM/OEM 定制</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 关于公司 / 优势 -->
+        <div class="about">
+            <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">✅ 为什么选择我们？</h2>
+            <p>🔹 12年行业经验，专注商用/工业显示领域</p >
+            <p>🔹 支持按需定制：尺寸、亮度、接口、触摸方式、外壳结构</p >
+            <p>🔹 严格质检：老化测试、ESD防护、宽温工作（-20℃~70℃）</p >
+            <p>🔹 快速交付，技术支持</p >
+        </div>
+
+        <!-- 联系信息（邮件营销核心） -->
+        <div class="contact-block" id="contact">
+            <h3>📩 立即询价 / 索取规格书</h3>
+            <div class="contact-details">
+                <div><strong>📧 邮箱：</strong> <span style="word-break: break-all;">Alan.kou@heorousdisplay.com</span></div>
+                <div><strong>📞 电话：</strong> +86 13420913281</div>
+                <div><strong>📍 地址：</strong> 中国 · 深圳 · 宝安区</div>
+            </div>
+            <a href=" " class="btn-email">📨 发送邮件咨询</a >
+        </div>
+
+        <!-- 提示语（可选） -->
+        <p style="text-align: center; color: #5f6b8a; margin-top: 2rem; font-style: italic;">* 我们将在24小时内回复您，并提供详细规格书。</p >
+    </div>
+
+    <div class="footer">
+        © 2026 Heorousdisplay · 专业触控显示方案 · <a href="#contact">联系销售</a >
+    </div>
+</body>
+</html>
+```
+          
